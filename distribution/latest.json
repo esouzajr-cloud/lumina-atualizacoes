@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 15,
-  "versionName": "0.8.3",
+  "versionCode": 16,
+  "versionName": "0.8.4",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.3/LuminaPlayer.apk",
-  "sha256": "6ce3ea961d3f9c412aeecedbaf2beda84309fbfdc1345b9762b181189a35082f",
-  "size": 3666559,
-  "notes": "Modernização exclusiva da TV ao Vivo: categorias horizontais e painel de grupos, busca por canais e EPG, atalhos, banners configuráveis e modos Lista/Grade. Player, listas, favoritos, histórico e demais páginas preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.4/LuminaPlayer.apk",
+  "sha256": "30c93971beb5c5d74fc0e028b76d14fc79498c47ca93e1b26b38312777dec63a",
+  "size": 3633791,
+  "notes": "Restauração da interface e do comportamento da TV anterior (versão 0.8.2), removendo a modernização da versão 0.8.3. Listas, favoritos, histórico, PIN, player e demais páginas preservados."
 }
