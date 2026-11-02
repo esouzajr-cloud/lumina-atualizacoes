@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 16,
-  "versionName": "0.8.4",
+  "versionCode": 17,
+  "versionName": "0.8.5",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.4/LuminaPlayer.apk",
-  "sha256": "30c93971beb5c5d74fc0e028b76d14fc79498c47ca93e1b26b38312777dec63a",
-  "size": 3633791,
-  "notes": "Restauração da interface e do comportamento da TV anterior (versão 0.8.2), removendo a modernização da versão 0.8.3. Listas, favoritos, histórico, PIN, player e demais páginas preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.5/LuminaPlayer.apk",
+  "sha256": "cb07ed8916762c4d99a6d2f2fca3008da0ffb98f78228b6f7ba16f3510b7cb6e",
+  "size": 3650175,
+  "notes": "TV aprimorada mantendo a identidade visual atual. Categorias na nova ordem, Canais Recentes pelo histórico, Eventos do dia pelo EPG, grupos adultos separados e protegidos pelo PIN. Cards mais legíveis e adaptados a telas pequenas. Player e demais páginas preservados."
 }
