@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 13,
-  "versionName": "0.8.1",
+  "versionCode": 14,
+  "versionName": "0.8.2",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.1/LuminaPlayer.apk",
-  "sha256": "87a44728116039fd519e9a12384ddc221e6decec673aa22cc0f5932380a223ac",
-  "size": 3633791,
-  "notes": "Meu Perfil renovado: cabeçalho compacto, atalhos para Favoritos e Histórico, opções agrupadas, edição do nome e indicação de atualizações. Mesmas cores, fontes e funcionalidades. Listas, progresso e PIN preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.2/LuminaPlayer.apk",
+  "sha256": "73769ea1b70c7ae502940acaaa219fb30eb724433d4e3c959be5d7bcd5c36518",
+  "size": 3633787,
+  "notes": "Início renovado com destaques, jogos e Continue assistindo. Configurações organizadas em grupos expansíveis, com salvamento de nome e categorias. Mesma identidade visual. Listas, favoritos, progresso e PIN preservados."
 }
