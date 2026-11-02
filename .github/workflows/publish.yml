@@ -22,8 +22,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$REPOSITORY/contents/distribution/latest.json?ref=$COMMIT" > latest.json
-          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$REPOSITORY/contents/distribution/LuminaPlayer.apk?ref=$COMMIT" > LuminaPlayer.apk
+          curl --fail --location --retry 3 --max-time 60 --proto '=https' --proto-redir '=https' --output latest.json "https://raw.githubusercontent.com/$REPOSITORY/$COMMIT/distribution/latest.json"
+          curl --fail --location --retry 3 --max-time 120 --proto '=https' --proto-redir '=https' --output LuminaPlayer.apk "https://raw.githubusercontent.com/$REPOSITORY/$COMMIT/distribution/LuminaPlayer.apk"
           python3 - <<'PY'
           import json,hashlib,os,re
           from pathlib import Path
