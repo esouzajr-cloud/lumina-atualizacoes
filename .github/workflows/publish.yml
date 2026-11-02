@@ -1,0 +1,75 @@
+name: Publicar atualizacao do Lumina
+on:
+  push:
+    branches: [main]
+    paths: [distribution/latest.json, distribution/LuminaPlayer.apk]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: lumina-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPOSITORY: ${{ github.repository }}
+      COMMIT: ${{ github.sha }}
+    steps:
+      - name: Baixar pacote deste commit e validar
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$REPOSITORY/contents/distribution/latest.json?ref=$COMMIT" > latest.json
+          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$REPOSITORY/contents/distribution/LuminaPlayer.apk?ref=$COMMIT" > LuminaPlayer.apk
+          python3 - <<'PY'
+          import json,hashlib,os,re
+          from pathlib import Path
+          m=json.loads(Path('latest.json').read_text())
+          assert m['packageName']=='com.lumina.player' and m['versionCode']>0 and m['minSdk']==26
+          assert re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+',m['versionName'])
+          assert m['apkUrl']==f"https://github.com/{os.environ['REPOSITORY']}/releases/download/v{m['versionName']}/LuminaPlayer.apk"
+          apk=Path('LuminaPlayer.apk')
+          assert 0<apk.stat().st_size==m['size']<=250*1024*1024
+          assert hashlib.file_digest(apk.open('rb'),'sha256').hexdigest()==m['sha256']
+          with open(os.environ['GITHUB_ENV'],'a') as f:
+              f.write('VERSION='+m['versionName']+'\nCODE='+str(m['versionCode'])+'\n')
+          Path('NOTAS.md').write_text(m.get('notes','Atualizacao do Lumina Player.'))
+          PY
+          signer="$(find "$ANDROID_HOME/build-tools" -name apksigner -type f | sort -V | tail -1)"
+          aapt="$(find "$ANDROID_HOME/build-tools" -name aapt2 -type f | sort -V | tail -1)"
+          "$signer" verify --verbose --print-certs LuminaPlayer.apk > signature.txt
+          grep -q 'Signer #1 certificate SHA-256 digest: 984e8a3d0024cef5de466cb3bf4d9d33b089d4b391d5c348f9322ce09cfef328' signature.txt
+          "$aapt" dump badging LuminaPlayer.apk > badging.txt
+          python3 - <<'PY'
+          import json
+          m=json.load(open('latest.json'))
+          expected=f"name='com.lumina.player' versionCode='{m['versionCode']}' versionName='{m['versionName']}'"
+          assert expected in open('badging.txt').read()
+          PY
+          ! grep -q application-debuggable badging.txt
+      - name: Publicar os dois arquivos juntos
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="v$VERSION"
+          if gh release view "$tag" --repo "$REPOSITORY" --json isDraft > existing.json 2> existing-error.txt; then
+            if [ "$(python3 -c 'import json;print(json.load(open("existing.json"))["isDraft"])')" = False ]; then
+              echo 'Esta versao ja foi publicada. Crie uma versao maior para alterar o instalador.'
+              exit 0
+            fi
+          else
+            if ! grep -qi 'not found\|HTTP 404' existing-error.txt; then cat existing-error.txt; exit 1; fi
+            gh release create "$tag" --repo "$REPOSITORY" --target "$COMMIT" --draft --title "Lumina Player $VERSION" --notes-file NOTAS.md
+          fi
+          if gh api "repos/$REPOSITORY/releases/latest" > previous.json 2> previous-error.txt; then
+            previous_tag="$(python3 -c 'import json;print(json.load(open("previous.json"))["tag_name"])')"
+            gh release download "$previous_tag" --repo "$REPOSITORY" --pattern latest.json --output previous-manifest.json
+            python3 -c 'import json,os;assert int(os.environ["CODE"])>int(json.load(open("previous-manifest.json"))["versionCode"]), "Versao antiga recusada"'
+          else
+            if ! grep -qi 'HTTP 404' previous-error.txt; then cat previous-error.txt; exit 1; fi
+          fi
+          gh release upload "$tag" LuminaPlayer.apk latest.json --repo "$REPOSITORY" --clobber
+          gh release edit "$tag" --repo "$REPOSITORY" --draft=false --latest
