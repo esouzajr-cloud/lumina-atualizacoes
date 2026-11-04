@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 17,
-  "versionName": "0.8.5",
+  "versionCode": 18,
+  "versionName": "0.8.6",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.5/LuminaPlayer.apk",
-  "sha256": "cb07ed8916762c4d99a6d2f2fca3008da0ffb98f78228b6f7ba16f3510b7cb6e",
-  "size": 3650175,
-  "notes": "TV aprimorada mantendo a identidade visual atual. Categorias na nova ordem, Canais Recentes pelo histórico, Eventos do dia pelo EPG, grupos adultos separados e protegidos pelo PIN. Cards mais legíveis e adaptados a telas pequenas. Player e demais páginas preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.6/LuminaPlayer.apk",
+  "sha256": "7a5fe97ae202bee58c68c419eb52cfaa24edc6cdf5cd2a8179c15b27b63afee7",
+  "size": 3666555,
+  "notes": "Nova tela de filmes, séries, desenhos e animes no estilo Lumina: reprodução no topo, temporadas e episódios horizontais, sinopse expansível, favoritos, compartilhamento do título e sugestões reais do catálogo. Player, progresso, TV e demais páginas preservados."
 }
