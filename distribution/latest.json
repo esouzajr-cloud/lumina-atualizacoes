@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 18,
-  "versionName": "0.8.6",
+  "versionCode": 19,
+  "versionName": "0.8.7",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.6/LuminaPlayer.apk",
-  "sha256": "7a5fe97ae202bee58c68c419eb52cfaa24edc6cdf5cd2a8179c15b27b63afee7",
-  "size": 3666555,
-  "notes": "Nova tela de filmes, séries, desenhos e animes no estilo Lumina: reprodução no topo, temporadas e episódios horizontais, sinopse expansível, favoritos, compartilhamento do título e sugestões reais do catálogo. Player, progresso, TV e demais páginas preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.7/LuminaPlayer.apk",
+  "sha256": "3a512099568cc625136921477daf0bcfddb6ce26b989895c0e67b6a9230185f6",
+  "size": 3666559,
+  "notes": "Temporadas em menu suspenso, episódios em quadrados numerados e play somente na área do reprodutor. Correção da leitura e exibição das sinopses disponíveis na M3U e no provedor. Atualize listas M3U antigas uma vez para aproveitar os metadados."
 }
