@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 20,
-  "versionName": "0.8.8",
+  "versionCode": 21,
+  "versionName": "0.8.9",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.8/LuminaPlayer.apk",
-  "sha256": "8545c0a8ac18375f118208f88367706a1af066230d58549396721082fe9d0a60",
-  "size": 3666555,
-  "notes": "Busca por título com filmes e séries agrupadas, incluindo animes e desenhos, sem episódios individuais ou canais ao vivo. Temporadas e episódios continuam acessíveis dentro da série. Não é necessário reimportar a lista."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.9/LuminaPlayer.apk",
+  "sha256": "3451f33db9f2a61fd03fae9589fc3da1c29ae9afc24befca08d411aa17caf92e",
+  "size": 3666559,
+  "notes": "Atualização otimizada do catálogo salvo: comparação compacta, reaproveitamento de dados inalterados, reordenação sem recriptografar e organização somente das novidades quando possível. Preserva listas, favoritos e progresso. M3U completa ainda é recebida quando o servidor não oferece atualização parcial."
 }
