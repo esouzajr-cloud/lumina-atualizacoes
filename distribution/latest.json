@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 19,
-  "versionName": "0.8.7",
+  "versionCode": 20,
+  "versionName": "0.8.8",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.7/LuminaPlayer.apk",
-  "sha256": "3a512099568cc625136921477daf0bcfddb6ce26b989895c0e67b6a9230185f6",
-  "size": 3666559,
-  "notes": "Temporadas em menu suspenso, episódios em quadrados numerados e play somente na área do reprodutor. Correção da leitura e exibição das sinopses disponíveis na M3U e no provedor. Atualize listas M3U antigas uma vez para aproveitar os metadados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.8/LuminaPlayer.apk",
+  "sha256": "8545c0a8ac18375f118208f88367706a1af066230d58549396721082fe9d0a60",
+  "size": 3666555,
+  "notes": "Busca por título com filmes e séries agrupadas, incluindo animes e desenhos, sem episódios individuais ou canais ao vivo. Temporadas e episódios continuam acessíveis dentro da série. Não é necessário reimportar a lista."
 }
