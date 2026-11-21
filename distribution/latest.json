@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 21,
-  "versionName": "0.8.9",
+  "versionCode": 22,
+  "versionName": "0.8.10",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.9/LuminaPlayer.apk",
-  "sha256": "3451f33db9f2a61fd03fae9589fc3da1c29ae9afc24befca08d411aa17caf92e",
-  "size": 3666559,
-  "notes": "Atualização otimizada do catálogo salvo: comparação compacta, reaproveitamento de dados inalterados, reordenação sem recriptografar e organização somente das novidades quando possível. Preserva listas, favoritos e progresso. M3U completa ainda é recebida quando o servidor não oferece atualização parcial."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.10/LuminaPlayer.apk",
+  "sha256": "a53500d717dddbad30a0e409c9f1ae06a26732924799c9dd1c329d215d6c0ffc",
+  "size": 3682943,
+  "notes": "Atualização do catálogo com gravações agrupadas, consultas reduzidas e reparo de hashes antigos quando os dados permanecem iguais. Preserva os itens salvos e informa os campos que realmente mudaram, sem expor endereços privados."
 }
