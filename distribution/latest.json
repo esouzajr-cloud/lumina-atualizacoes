@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 22,
-  "versionName": "0.8.10",
+  "versionCode": 23,
+  "versionName": "0.8.11",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.10/LuminaPlayer.apk",
-  "sha256": "a53500d717dddbad30a0e409c9f1ae06a26732924799c9dd1c329d215d6c0ffc",
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.11/LuminaPlayer.apk",
+  "sha256": "b09c868da8db82f4722648319e184d021e375832fe634635e46e60445490f5ec",
   "size": 3682943,
-  "notes": "Atualização do catálogo com gravações agrupadas, consultas reduzidas e reparo de hashes antigos quando os dados permanecem iguais. Preserva os itens salvos e informa os campos que realmente mudaram, sem expor endereços privados."
+  "notes": "Novo visual de Continue assistindo: capas verticais, selo de temporada e episódio, play central, progresso sobre a capa e título abaixo. Animes incluídos, com retomada do último episódio e dados reais de progresso."
 }
