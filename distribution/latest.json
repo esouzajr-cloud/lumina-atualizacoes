@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 25,
-  "versionName": "0.8.13",
+  "versionCode": 26,
+  "versionName": "0.8.14",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.13/LuminaPlayer.apk",
-  "sha256": "92f923c4c95c383c915d613098a7b3f4ab35f8ac39049c08a7923f4374eff660",
-  "size": 3682943,
-  "notes": "Novos layouts Lumina: Início com abas discretas, progresso em porcentagem e acesso rápido; TV com categorias horizontais, canais mais largos e modo lista/grade; detalhes com temporadas e ações compactas. Reprodução, listas, favoritos, histórico, PIN e progresso preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.14/LuminaPlayer.apk",
+  "sha256": "9517af218ef099388c754a849b522641132d9cce3e335e2df701b603c3a565eb",
+  "size": 3699327,
+  "notes": "TV ajustada ao modelo aprovado: prévia panorâmica, cabeçalho Lumina, botões preenchidos, categorias sem cortes e cards compactos com qualidade e favorito à direita. Lista/grade, EPG, PIN, histórico e player preservados. Outras telas não foram alteradas."
 }
