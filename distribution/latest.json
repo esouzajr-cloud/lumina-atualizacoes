@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 28,
-  "versionName": "0.8.16",
+  "versionCode": 29,
+  "versionName": "0.8.17",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.16/LuminaPlayer.apk",
-  "sha256": "57d1250bd64378677fe265b17e8c7e621d4fc8e6dd8fbc483c56fce48483ce20",
-  "size": 3732095,
-  "notes": "Corrige a agenda vazia: leitura dos horários reais da ESPN e renovação do cache antigo. Inclui acesso à programação de TV do Sofascore pelo navegador. Mantém canais, listas e player."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.17/LuminaPlayer.apk",
+  "sha256": "2b634742c77c7c4d852c0d488a7ce89167a2974556cc323ec3d293726651bc36",
+  "size": 5607254,
+  "notes": "Novo seletor de ligas com 29 competições, logos incluídas, pesquisa e cartões com seleção vermelha. Consulta por liga e data com cache, preservando canais, player e listas."
 }
