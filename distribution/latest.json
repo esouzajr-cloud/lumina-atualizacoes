@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 31,
-  "versionName": "0.8.19",
+  "versionCode": 32,
+  "versionName": "0.8.20",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.19/LuminaPlayer.apk",
-  "sha256": "d3a40177ee2a9c41a075c4c71bed429b13fc51df6cb409dd3cf057443b96360f",
-  "size": 5640826,
-  "notes": "Corrige a transição do horário previsto: atualização mais rápida perto do início, indicação de início não confirmado e seleção manual de canais liberada para jogos agendados. Inclui botão Atualizar partida e correção da idade do cache. Lembretes, player e listas preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.20/LuminaPlayer.apk",
+  "sha256": "5197a57c78f578904287951dc4699cc2ac9bba22a6505e72bdbb9169a991371e",
+  "size": 5640830,
+  "notes": "Melhora a identificação pelo título e descrição do EPG, prioriza canais da partida e canais esportivos, mantém busca em todos os canais e adiciona atualização isolada do guia. Player, listas e lembretes preservados."
 }
