@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 26,
-  "versionName": "0.8.14",
+  "versionCode": 27,
+  "versionName": "0.8.15",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.14/LuminaPlayer.apk",
-  "sha256": "9517af218ef099388c754a849b522641132d9cce3e335e2df701b603c3a565eb",
-  "size": 3699327,
-  "notes": "TV ajustada ao modelo aprovado: prévia panorâmica, cabeçalho Lumina, botões preenchidos, categorias sem cortes e cards compactos com qualidade e favorito à direita. Lista/grade, EPG, PIN, histórico e player preservados. Outras telas não foram alteradas."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.15/LuminaPlayer.apk",
+  "sha256": "5e31c9e39812efb6dfd7345404e4f4d873bb5a826fe08156932058aa37c7f5b8",
+  "size": 3732095,
+  "notes": "Nova seção de jogos: agenda por data e liga, placares públicos da ESPN, escudos e detalhes disponíveis. Partidas em andamento são associadas aos canais reais pelo EPG, com seleção de transmissão e alternativa manual. Cache local, player e listas preservados."
 }
