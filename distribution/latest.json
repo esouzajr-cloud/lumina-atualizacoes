@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 29,
-  "versionName": "0.8.17",
+  "versionCode": 30,
+  "versionName": "0.8.18",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.17/LuminaPlayer.apk",
-  "sha256": "2b634742c77c7c4d852c0d488a7ce89167a2974556cc323ec3d293726651bc36",
-  "size": 5607254,
-  "notes": "Novo seletor de ligas com 29 competições, logos incluídas, pesquisa e cartões com seleção vermelha. Consulta por liga e data com cache, preservando canais, player e listas."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.18/LuminaPlayer.apk",
+  "sha256": "3743a799c513ba24156a4719a7399b45b4b4c85400fbba6f8cfcd9dddd589843",
+  "size": 5640830,
+  "notes": "Tela da partida aprimorada com contagem regressiva, confrontos com escudos e escalações em campo quando publicadas. Lembretes locais de 30, 15 ou 5 minutos ou no início, com notificação que abre a partida. Player, canais e listas preservados."
 }
