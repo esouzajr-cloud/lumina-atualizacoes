@@ -1,10 +1,10 @@
 {
   "packageName": "com.lumina.player",
-  "versionCode": 30,
-  "versionName": "0.8.18",
+  "versionCode": 31,
+  "versionName": "0.8.19",
   "minSdk": 26,
-  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.18/LuminaPlayer.apk",
-  "sha256": "3743a799c513ba24156a4719a7399b45b4b4c85400fbba6f8cfcd9dddd589843",
-  "size": 5640830,
-  "notes": "Tela da partida aprimorada com contagem regressiva, confrontos com escudos e escalações em campo quando publicadas. Lembretes locais de 30, 15 ou 5 minutos ou no início, com notificação que abre a partida. Player, canais e listas preservados."
+  "apkUrl": "https://github.com/esouzajr-cloud/lumina-atualizacoes/releases/download/v0.8.19/LuminaPlayer.apk",
+  "sha256": "d3a40177ee2a9c41a075c4c71bed429b13fc51df6cb409dd3cf057443b96360f",
+  "size": 5640826,
+  "notes": "Corrige a transição do horário previsto: atualização mais rápida perto do início, indicação de início não confirmado e seleção manual de canais liberada para jogos agendados. Inclui botão Atualizar partida e correção da idade do cache. Lembretes, player e listas preservados."
 }
